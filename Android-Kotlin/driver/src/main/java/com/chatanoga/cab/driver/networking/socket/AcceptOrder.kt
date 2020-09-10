@@ -1,0 +1,9 @@
+package com.chatanoga.cab.driver.networking.socket
+
+import com.chatanoga.cab.common.networking.socket.interfaces.SocketRequest
+
+class AcceptOrder(requestId: Long) : SocketRequest() {
+    init {
+        this.params = arrayOf(requestId)
+    }
+}
